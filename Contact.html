@@ -50,21 +50,22 @@
 <!-- content -->
 				<section id="content">
 					<div class="wrapper">
-						<h2>Formulario de Contacto</h2>
-						<form id="ContactForm">
+						<h2>Formulario de Contacto</h2>						
+						<form name='form' method='post' action='http://velusoft.com/ContactMailMotoStar.php' id="ContactForm">
 							<div>
 								<div class="wrapper">
-									<span>Nombre:</span><input type="text" class="input" style="width: 630px;">
+									<span>Nombre:</span><input type="text" class="input" style="width: 630px;" name='name'>
 								</div>
 								<div class="wrapper">
-									<span>E-mail:</span><input type="text" class="input" style="width: 630px;">								
+									<span>E-mail:</span><input type="text" class="input" style="width: 630px;"  name='email'>								
 								</div>
 								<div class="textarea_box" >
-									<span>Mensaje:</span><textarea name="textarea" cols="1" rows="1" style="width: 630px; height: 128px;"></textarea>								
+									<span>Mensaje:</span><textarea name="textarea" cols="1" rows="1" style="width: 630px; height: 128px;" name='msg'></textarea>								
 								</div>
 								<span>&nbsp;</span>
 								<a href="#" class="button" onClick="document.getElementById('ContactForm').reset()">Limpiar</a>
 								<a href="#" class="button" onClick="document.getElementById('ContactForm').submit()">Enviar</a>
+								 <input type='submit' name='Submit' value='Enviar' class="button"/>
 							</div>
 						</form>
 					</div>
